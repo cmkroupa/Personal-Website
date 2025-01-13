@@ -1,0 +1,71 @@
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+main{
+    margin:100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+p{
+    line-height: 2;
+}
+.animation{
+    width: 350px;
+}
+.body{
+    animation: fadeIn 1s ease-in-out;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.intro{
+    display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(218, 226, 233);
+        border: 2px solid black;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 15px;
+        box-shadow: 2px 2px 2px black;
+        max-width: 800px;
+}
+.extra{
+    display: flex;
+    flex-direction: row;
+    
+}
+.fun{
+    list-style: none;
+}
+
+.facts{
+    flex-direction: column;
+    margin: 5px;
+}
+.skills{
+    color:inherit;
+    text-shadow: 0.2px 0.2px 0.2px black;
+}
+.skills:hover{
+    color: rgb(122, 122, 122);
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

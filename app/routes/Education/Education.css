@@ -1,0 +1,53 @@
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.degree{
+    background-color:rgb(216, 221, 227) ;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px;
+    min-width: 750px;
+    max-width: 750px;
+}
+.courses {
+    display: flex;
+    flex-direction: column;
+}
+.course{
+    margin: 0px;
+    padding:0px;
+}
+.course:hover{
+    color:brown;
+    cursor: pointer;
+}
+h1{
+    margin: 5px;
+}
+h2{
+    margin: 5px;
+}
+h4{
+
+    margin: 0px;
+}
+h6{
+    margin:0px;
+    padding-left: 20px;
+}
+.course {
+
+}

@@ -1,12 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+:root {
+    font-size: 21px;
+    color:#3a3d40;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color:aliceblue;
+}
 
-html,
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
 body {
-  @apply bg-white dark:bg-gray-950;
+    margin: 0;
+    padding: 0;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+body::-webkit-scrollbar {
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #581d20;
 }
