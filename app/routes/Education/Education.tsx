@@ -21,12 +21,12 @@ export default function Education() {
     return (
         <div>
             <Nav data={ 1} />
-            <main className="raleway-font">
+            <main className="font">
                 <div className="container Degrees">
                     <h1>Degrees</h1>
                     <h6>click on a course for a full description</h6>
                     <div className="degree">
-                        <h2>Honours Specialization in Computer Science</h2>
+                        <h2><a href="https://www.westerncalendar.uwo.ca/Modules.cfm?ModuleID=21123&SelectedCalendar=Live&ArchiveID=">Honours Specialization in Computer Science</a></h2>
                         <h3>Western University - '28</h3>
                         <ul className="courses">
                             <h4>Notable Completed Courses</h4>
@@ -100,7 +100,7 @@ export default function Education() {
                         </ul>
                     </div>
                     <div className="degree">
-                        <h2>Major in Mathematics</h2>
+                        <h2><a href="https://westerncalendar.uwo.ca/Modules.cfm?ModuleID=21058&SelectedCalendar=Live&ArchiveID=">Major in Mathematics</a></h2>
                         <h3>Western University - '28</h3>
                         <ul className="courses">
                             <h4>Notable Completed Courses</h4>

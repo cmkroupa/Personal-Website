@@ -8,11 +8,12 @@
     background-color:aliceblue;
 }
 
-.raleway-font {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+
+.font {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 body {

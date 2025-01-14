@@ -40,12 +40,22 @@ export default function Home() {
                 setSkills(!Skills);
                 break;
             }
+            case 6:{
+                setChess(!chess);
+                break;
+            }case 7:{
+                setBooks(!books);
+                break;
+            }case 8:{
+                setMovies(!movies);
+                break;
+            }
         }
     }
     return (
         <>
             <Nav data={0} />
-            <main className="raleway-font">
+            <main className="font">
                 <div className="animation">
                     <DotLottieReact
                         src="https://lottie.host/0ca9bef0-5438-4250-aabc-0873d45b31c3/AETxKEF68k.lottie"
@@ -68,28 +78,39 @@ export default function Home() {
                     <div className="extra">
                         <ul className="fun facts">
                             <h2>Fun Facts About Me:</h2>
-                            <li>
-                                Chess Ratings
-                                <ul className="facts">
-                                    <li>Bullet: 1550</li>
-                                    <li>Blitz: 1650</li>
-                                    <li>Puzzle: 2000</li>
-                                </ul>
+                            <li className="skills"  onClick={() => { toggleDropDown(6)}}>
+                                    Chess Ratings
+                                    {
+                                        chess && <ul className="facts">
+                                        <li>Bullet: 1550</li>
+                                        <li>Blitz: 1650</li>
+                                        <li>Puzzle: 2000</li>
+                                    </ul>
+                                    }
+                                
                             </li>
-                            <li>
-                                Currently Reading
-                                <ul className="facts">
+                            <li className="skills"onClick={() => { toggleDropDown(7)}} >
+                                    Currently Reading
+                                    {
+                                        books && <ul className="facts">
                                     <li>Steve Jobs by Walter Isaacson</li>
                                     <li>Hacking: The Art of Explotation by Jon Erickson</li>
                                 </ul>
+                                }
+                                
                             </li>
-                            <li>
-                                Favourite Shows and Movies
-                                <ul className="facts">
-                                    <li>Mr Robot</li>
+                            <li className="skills"  onClick={() => { toggleDropDown(8) }}>
+                                    Favourite Shows and Movies
+                                    {
+                                        movies && <ul className="facts">
+                                    
+                                    <li>Snowden</li>
                                     <li>The Imitation Game</li>
                                     <li>Inception</li>
+                                    <li>Mr.Robot</li>
                                 </ul>
+                                    }
+                                
                             </li>
 
                         </ul>

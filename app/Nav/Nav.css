@@ -3,7 +3,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 10px;
+    margin: 25px;
 }
 
 .home {
@@ -12,7 +12,7 @@ nav {
 }
 
 .home:hover {
-    color: rgb(60, 37, 37);
+    color:rgb(201, 207, 212);
     font-weight: bold;
 }
 
@@ -27,10 +27,12 @@ a {
     color: inherit;
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: underline;
 }
 
 a:hover {
-    color: rgb(60, 37, 37);
+    color:rgb(201, 207, 212);
+    text-decoration: none;
     font-weight: bold;
     transform: scale(1.2);
 }

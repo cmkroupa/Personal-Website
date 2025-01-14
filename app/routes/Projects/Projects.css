@@ -1,8 +1,8 @@
-.raleway-font {
-    font-family: "Raleway", serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
+.font {
+  font-family: "Markazi Text", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 main {
@@ -17,9 +17,11 @@ main {
 }
 
 .project {
-    background-color: rgb(216, 221, 227);
-    border: 2px solid black;
-    border-radius: 8px;
+    background-color:aliceblue;
+    color: inherit;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px black;
+    border-radius: 4px;
     padding: 15px;
     margin: 15px;
     min-width: 750px;
@@ -35,7 +37,6 @@ h1 {
 h2 {
     margin: 5px;
 }
-
 h4 {
 
     margin: 0px;

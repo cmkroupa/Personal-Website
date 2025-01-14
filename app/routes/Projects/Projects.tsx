@@ -5,7 +5,7 @@ export default function Projects() {
     return (
         <div>
             <Nav data={ 2} />
-            <main className="raleway-font">
+            <main className="font">
                 <div className="Projects">
                     <h1>Projects</h1>
                     <h5>click on a project title for the github link</h5>
@@ -30,7 +30,7 @@ export default function Projects() {
                     </div>
                     <div className="project">
                         <div className="info">
-                            <h2><a href="https://github.com/AlexanderKubarakos/CodenameGoFundUs">GoFundUs</a></h2>
+                            <h2><a className="title" href="https://github.com/AlexanderKubarakos/CodenameGoFundUs">GoFundUs</a></h2>
                             <h4>Group Hackathon Project - Hack Western 11</h4>
                             <h5>Dec 2024</h5>
                             <p>
@@ -45,33 +45,30 @@ export default function Projects() {
                                 </ul>
                             </p>
                         </div>
-                        <img></img>
                     </div>
                     <div className="project">
                         <div className="info">
-                            <h2><a href="https://github.com/cmkroupa/MazeGame">Maze Graph Solver</a></h2>
+                            <h2><a className="title" href="https://github.com/cmkroupa/MazeGame">Maze Graph Solver</a></h2>
                             <h4>Assignment - CS2210</h4>
                             <h5>Nov 2024</h5>
                             <p>
                                 Developed a weighted graph data structure to model a maze with walls, rooms, and key-restricted corridors. Used a Depth First Search (DFS) to find the a solution in the given the maze layout and key availability.
                             </p>
                         </div>
-                        <img></img>
                     </div>
                     <div className="project">
                         <div className="info">
-                            <h2><a href="https://github.com/cmkroupa/west_scrape">Western Scrape</a></h2>
+                            <h2><a className="title" href="https://github.com/cmkroupa/west_scrape">Western Scrape</a></h2>
                             <h4>Personal Project</h4>
                             <h5>June 2024</h5>
                             <p>
                                 Built a web scraper that signs into Western’s Draft My service which shows all scheduling information for classes and scrapes all the data. This will be used in a future personal project to make a much better Draft My service
                             </p>
                         </div>
-                        <img></img>
                     </div>
                     <div className="project">
                         <div className="info">
-                            <h2>Frog Pathing Game</h2>
+                            <h2><a>Frog Pathing Game</a></h2>
                             <h4>Assignment - CS1027</h4>
                             <h5>Mar 2024</h5>
                             <p>
@@ -80,7 +77,6 @@ export default function Projects() {
                                 Developed a preference-based decision making system using a priority queue to determine optimal sequence of moves based on environmental factors.
                             </p>
                         </div>
-                        <img></img>
                     </div>
                 </div>
             </main>
