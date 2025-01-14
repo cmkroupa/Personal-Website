@@ -2,6 +2,7 @@ import { useState, useEffect} from "react";
 import Nav from "../../Nav/Nav.tsx";
 import "./Home.css";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import Typewriter from "../../Typewriter.tsx";
 
 export default function Home() {
     const [isAnimationFinished, setIsAnimationFinished] = useState(false);
@@ -65,7 +66,15 @@ export default function Home() {
                 {isAnimationFinished &&
                     <div className="body">
                         <div className="intro">
-                            <h1>My name is Cameron Kroupa</h1>
+                            <h1>
+                                <Typewriter
+                                textArray={['System.out.print("I am Cameron Kroupa!");', 'printf("Hello there!");', 'print("Cameron Kroupa\'s Website")']}
+                                typingSpeed={75}
+                                deletingSpeed={40}
+                                period={1500}
+                            />
+                            </h1>
+                            
                             <p>
                                 I am a second year student at Western University pursuing a dual degree in Computer Science and Mathematics.
                                 I'm passionate about finding creative and unique solutions to problems. I enjoy watching random youtube videos that go into incredible

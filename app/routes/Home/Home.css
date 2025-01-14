@@ -1,9 +1,3 @@
-.font {
-  font-family: "Markazi Text", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-}
 main{
     margin:15px;
     display: flex;
@@ -29,12 +23,10 @@ p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color:aliceblue;
-        border: 1px solid black;
+        box-shadow: var(--box-shadow);
         border-radius: 8px;
         margin: 10px;
         padding: 15px;
-        box-shadow: 0px 0px 2px black;
         max-width: 800px;
 }
 .extra{
@@ -47,12 +39,9 @@ p{
     flex-direction: column;
     margin: 5px;
 }
-.skills{
-    color:inherit;
-    text-shadow: 0.2px 0.2px 0.2px black;
-}
+
 .skills:hover{
-    color:rgb(201, 207, 212);
+    color:var(--hover-color);
     cursor: pointer;
 }
 
