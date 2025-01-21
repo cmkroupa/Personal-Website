@@ -1,0 +1,25 @@
+.about-container {
+    flex: 1;                 /* Take up the remaining space */
+    display: flex;           /* Use flexbox to align content */
+    flex-direction: column;  /* Align content vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center;     /* Center horizontally */
+    text-align: center;      /* Center-align text */
+     margin: 40px;           
+}
+
+.about-title {
+
+
+}
+
+.about-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about-links-info {
+    margin-top: 10px;
+    min-height: 1.5em; /* Ensure space is reserved for dynamic content */
+}

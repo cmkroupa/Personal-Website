@@ -1,18 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 nav {
-    width: 25%;
+    width: 25%;              /* Fixed width */
+    height: 100vh;           /* Full height of the viewport */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
+    flex-direction: column;  /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center;     /* Center items horizontally */
+    position: sticky;        /* Stick to the viewport */
+    top: 0;                  /* Align at the top */
     color: var(--third-color);
-    background-color: rgb(69, 148, 250);
+    background-color: rgb(69, 148, 250); /* Consistent background */
 }
-a.nav-item:hover{
+
+
+
+
+a.nav-item {
+    display: inline-block;
+    color: var(--third-color);
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+
+a.nav-item:hover {
     color: #FAFAFA;
     cursor: pointer;
+    transform: scale(1.1) translateY(-3px);
 }

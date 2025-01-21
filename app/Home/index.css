@@ -1,5 +1,9 @@
 .master-container {
-    display: flex;
-    height: 100vh;
-    /* Make the container fill the screen height */
+    display: flex;           
+    flex-direction: row;     
+    height: 100vh;           
+    width: 100vw;             
+}
+.not-nav{
+    width: 75%;
 }
