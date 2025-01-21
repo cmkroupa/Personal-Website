@@ -18,6 +18,8 @@
     --h5-size: 18px;
     --h6-size: 15px;
     --p-size: 18px; /* Comfortable reading size for paragraphs */
+
+    scroll-behavior: smooth;
 }
 
 a{
