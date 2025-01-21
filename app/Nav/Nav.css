@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    color: var(--third-color);
+    background-color: rgb(69, 148, 250);
+}
+a.nav-item:hover{
+    color: #FAFAFA;
+    cursor: pointer;
+}
