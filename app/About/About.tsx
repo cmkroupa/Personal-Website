@@ -12,15 +12,16 @@ export default function About() {
     }
 
     return (
-         <div className="about-container">
-            <div className="about-title">
+        <div className="about-container">
+            <div className='about-title'>
                 <h1>Cameron Kroupa</h1>  
-            </div>
-            <Typewriter textArray={["System.out.print('Welcome');",
+                <div className='about-animation'>
+                    <Typewriter textArray={["System.out.print('Welcome');",
                                         "printf('Hello!');",
                                         "print('Meet me.')",
-            ]} />
-            
+                    ]} />
+                </div>
+            </div> 
             <div className='about-links'>
                 <p></p>
                 <a href="https://linkedin.com/in/cameron-kroupa-7404ba289"><FontAwesomeIcon onClick={() => handleClick(0)} icon={faLinkedin} /></a>
