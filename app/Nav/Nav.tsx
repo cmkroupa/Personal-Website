@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFilePdf } from '@fortawesome/free-solid-svg-icons' // Import the specific icon
+import { faDownload } from '@fortawesome/free-solid-svg-icons' // Import the specific icon
 
 import "./Nav.css"
 export default function Nav() {
@@ -35,7 +35,7 @@ export default function Nav() {
                     <hr />
                     <br/>
                     <li>
-                        <a className='nav-item'><FontAwesomeIcon icon={faFilePdf} /> Resume</a>
+                        <a className='nav-item'><FontAwesomeIcon icon={faDownload} /> Resume</a>
                     </li>
                 </ul>
             </div>

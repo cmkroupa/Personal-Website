@@ -9,8 +9,8 @@ interface TypewriterProps {
 
 const Typewriter: React.FC<TypewriterProps> = ({
     textArray,
-    typingSpeed = 200,
-    deletingSpeed = 100,
+    typingSpeed = 250,
+    deletingSpeed = 150,
     period = 2000,
 }) => {
     const [text, setText] = useState<string>("");

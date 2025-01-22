@@ -1,15 +1,15 @@
 
 nav {
     width: 25%;              /* Fixed width */
-    height: 100vh;           /* Full height of the viewport */
+    height: 100%;           /* Full height of the viewport */
     display: flex;
     flex-direction: column;  /* Stack items vertically */
     justify-content: center; /* Center items vertically */
     align-items: center;     /* Center items horizontally */
-    position: sticky;        /* Stick to the viewport */
+    position: relative;        /* Stick to the viewport */
     top: 0;                  /* Align at the top */
     color: var(--third-color);
-    background-color: rgb(69, 148, 250); /* Consistent background */
+    background-color: var(--primary-color); /* Consistent background */
 }
 
 
@@ -25,4 +25,10 @@ a.nav-item:hover {
     color: #FAFAFA;
     cursor: pointer;
     transform: scale(1.1) translateY(-3px);
+}
+
+a.nav-item:active {
+    transform: scale(1) translateY(1px);
+    cursor: pointer;
+
 }

@@ -1,28 +1,59 @@
 .about-container {
-    display: flex;           /* Use flexbox to align content */
-    flex-direction: column;  /* Align content vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center;     /* Center horizontally */
-    text-align: center;      /* Center-align text */
-     margin: 40px;  
-     padding-bottom: 20px;         
+    display: flex;           
+    flex-direction: column; 
+    justify-content: center; 
+     margin: 40px;     
+     height: 100vh;
+
 }
-.about-title {
-    margin-bottom: 10px;
-    padding:0px;
+.about-title-div{
+    display: flex;
+    flex-direction: row;
+    font-size: 75px;
+    margin: 0px;
+    padding: 0px;
+}
+.about-title{
+    font-size: 75px;
+    display: flex;
+        flex-direction: row;
+        font-size: 75px;
+        margin: 0px;
+        padding: 0px;
+        color: var(--fourth-color);
 }
 .about-animation{
     color: var(--secondary-color);
     font-weight: 300;
-    font-size: var(--h5-size);
+    font-size: var(--h2-size);
+
+}
+.about-intro{
+    margin-top: 35px;
+    margin-bottom: 0px;
 }
 
 .about-links {
     display: flex;
-    justify-content: center;
     gap: 10px;
+
+}
+.about-links-link{
+    font-size: 40px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+.about-links-link:hover {
+    font-size: 40px;
+    color: var(--primary-color);
+    cursor: pointer;
+    transform: scale(1.1) translateY(-3px);
+    
 }
 
-.about-links-info {
-    min-height: 1em; /* Ensure space is reserved for dynamic content */
+.about-links-link:active {
+    transform: scale(1) translateY(1px);
+    cursor: pointer;
+
 }
+
+

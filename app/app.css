@@ -6,9 +6,10 @@
     background-color: #FAFAFA; /* Soft off-white for the background */
     color: #5d5d5d; /* Charcoal for main text */
 
-    --primary-color: rgb(69, 148, 250); 
+    --primary-color: rgb(46, 137, 255);
     --secondary-color: rgb(41, 83, 139); 
     --third-color: #8baaff;
+    --fourth-color: #5d5d5d;
     --link-color: rgb(37, 81, 137);
 
     --h1-size: 32px;
@@ -17,7 +18,7 @@
     --h4-size: 21px;
     --h5-size: 18px;
     --h6-size: 15px;
-    --p-size: 18px; 
+    --p-size: 24px; 
 
     scroll-behavior: smooth;
 }
