@@ -1,35 +1,36 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload } from '@fortawesome/free-solid-svg-icons' // Import the specific icon
-
+import { useEffect } from "react";
 import "./Nav.css"
+
 export default function Nav() {
     return (
         <nav>
             <img/>
             <div>
                 <ul>
-                    <li>
-                        <a className='nav-item'>About</a>
+                    <li> 
+                        <a href="#about" className='nav-item'>About</a>
                         
                     </li>
                     <li>
-                        <a className='nav-item'>Skills</a>
+                        <a href="#skills"  className='nav-item'>Skills</a>
 
                     </li>
                     <li>
-                        <a className='nav-item'>Education</a>
+                        <a href="#education" className='nav-item'>Education</a>
 
                     </li>
                     <li>
-                        <a className='nav-item'>Projects</a>
+                        <a href="#projects" className='nav-item'>Projects</a>
 
                     </li>
                     <li>
-                        <a className='nav-item'>Experience</a>
+                        <a href="#experience" className='nav-item'>Experience</a>
 
                     </li>
                     <li>
-                        <a className='nav-item'>Contact</a>
+                        <a href="#contact" className='nav-item'>Contact</a>
                     </li>
                     <br/>
                     <hr />

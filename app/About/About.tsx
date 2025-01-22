@@ -17,7 +17,7 @@ export default function About() {
     }
 
     return (
-        <div className="about-container">
+        <div id="about" className="about-container">
             <div className='about-title-div'>
                 <h1 style={{ color: 'var(--fourth-color)' }} className='about-title'>Cameron</h1>
                 <h1 style={{ color: 'var(--primary-color)' }} className='about-title'>&nbsp;&nbsp;Kroupa</h1>  

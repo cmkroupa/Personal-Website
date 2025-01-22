@@ -1,9 +1,6 @@
-.master-container {
-    display: flex;           
-    flex-direction: row;     
-    height: 100vh;           
-    width: 100vw;             
-}
 .not-nav{
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
     width: 75%;
 }

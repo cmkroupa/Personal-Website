@@ -6,14 +6,11 @@ nav {
     flex-direction: column;  /* Stack items vertically */
     justify-content: center; /* Center items vertically */
     align-items: center;     /* Center items horizontally */
-    position: relative;        /* Stick to the viewport */
+    position: fixed;        /* Stick to the viewport */
     top: 0;                  /* Align at the top */
     color: var(--third-color);
     background-color: var(--primary-color); /* Consistent background */
 }
-
-
-
 
 a.nav-item {
     display: inline-block;

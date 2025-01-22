@@ -5,3 +5,27 @@
     height: 100vh;
 
 }
+.skills-all{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skills-skill{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    margin-top: 20px;
+}
+h2.skills-skill-title{
+    font-size: 45px;
+}
+
+.skills-list{
+    margin: 0px;
+}
+.skills-list-item{
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 5px;
+    color:var(--fourth-color);
+}
