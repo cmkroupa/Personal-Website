@@ -1,0 +1,78 @@
+.skill-wheel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 30px;
+    align-items: center;
+    height: 300px;
+    background: #f5f5f5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    padding: 10px;
+    user-select: none;
+}
+.arrows{
+    display: flex;
+    flex-direction: row;
+}
+
+.arrow:hover {
+    color: var(--third-color);
+}
+
+.left-arrow {
+    position:sticky;
+}
+
+.right-arrow {
+    position: sticky;
+}
+
+.skill-display {
+    text-align: left;
+    width: 80%;
+    height: 60%;
+    position: relative;
+}
+
+.skill-name {
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.skill-info {
+    height: 135px;
+    display: flex;
+    /* Left-align the text horizontally */
+    align-items: center;
+    /* Vertically center the text */
+    font-size: 1.3rem;
+    color: #666;
+    /* Add some padding on the left for spacing */
+}
+
+/* Fading effect for next skill */
+.next-skill {
+    font-size: 22px;
+    opacity: 0.3;
+}
+
+.next-skill.fade {
+    opacity: 1;
+}
+
+.current-skill {
+    opacity: 1;
+}
+
+.current-skill.fade {
+    opacity: 0.5;
+}
