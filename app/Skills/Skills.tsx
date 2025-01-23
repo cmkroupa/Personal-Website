@@ -1,6 +1,6 @@
 import "./Skills.css"
 import { useState } from 'react'
-import SkillWheel from "./SkillWheel"
+import SkillWheel from "./SkillCard"
 
 export default function Skills() {
     const [numbers, setNumbers] = useState<number[]>([]);

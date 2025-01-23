@@ -1,5 +1,6 @@
 import "./index.css"
 import Typewriter from '~/Typewriter'
+import Spacer from '~/Spacer'
 import Nav from "./../Nav/Nav.tsx"
 import About from "./../About/About.tsx"
 import Skills from "./../Skills/Skills.tsx"
@@ -10,9 +11,13 @@ export default function Home() {
         <div className="master-container">
             <Nav />
             <div className="not-nav">
+                <Spacer id="start"/>
                 <About />
+                <Spacer/>
                 <Skills />
-                <Education/>
+                <Spacer/>
+                <Education />
+                <Spacer/>
             </div>
             
         </div>

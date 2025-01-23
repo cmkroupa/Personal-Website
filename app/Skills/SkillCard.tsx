@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./SkillWheel.css";
+import "./SkillCard.css";
 
-const SkillWheel = ({ skills} : any) => { // Accept the skills array as a prop
+const SkillCard = ({ skills} : any) => { // Accept the skills array as a prop
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handleNext = () => {
@@ -42,4 +42,4 @@ const SkillWheel = ({ skills} : any) => { // Accept the skills array as a prop
     );
 };
 
-export default SkillWheel;
+export default SkillCard;

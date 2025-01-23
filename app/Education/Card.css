@@ -1,0 +1,16 @@
+.card-course-selected{
+     color: var(--primary-color);
+}
+
+.card-course{
+     
+}
+
+.card-course:hover{
+     color: var(--primary-color);
+     cursor: pointer;
+}
+.card-course-selected:hover{
+     color: var(--fourth-color);
+     cursor: pointer;
+}
