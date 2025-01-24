@@ -6,15 +6,15 @@ import "./Nav.css"
 export default function Nav() {
     return (
         <nav>
-            <img/>
+            <img />
             <div>
                 <ul>
-                    <li> 
+                    <li>
                         <a href="#start" className='nav-item'>About</a>
-                        
+
                     </li>
                     <li>
-                        <a href="#skills"  className='nav-item'>Skills</a>
+                        <a href="#skills" className='nav-item'>Skills</a>
 
                     </li>
                     <li>
@@ -32,11 +32,11 @@ export default function Nav() {
                     <li>
                         <a href="#contact" className='nav-item'>Contact</a>
                     </li>
-                    <br/>
+                    <br />
                     <hr />
-                    <br/>
+                    <br />
                     <li>
-                        <a className='nav-item'><FontAwesomeIcon icon={faDownload} /> Resume</a>
+                        <a href="./Resume.pdf" download className='nav-item'><FontAwesomeIcon icon={faDownload} /> Resume</a>
                     </li>
                 </ul>
             </div>

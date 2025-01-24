@@ -1,26 +1,26 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
-import {  faSquarePhone,faSquareEnvelope} from '@fortawesome/free-solid-svg-icons'
-import { useState} from "react"
+import { faSquarePhone, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { useState } from "react"
 import Typewriter from "~/Typewriter"
 import "./About.css"
 export default function About() {
     const [state, setState] = useState(0);
 
-    const handleClick = (num : number) => {
+    const handleClick = (num: number) => {
         if (num == state) {
             setState(0);
         } else {
-            setState(num);    
+            setState(num);
         }
-        
+
     }
 
     return (
-        <div id="about" className="about-container">
+        <div id="about-container" className="about-container">
             <div className='about-title-div'>
                 <h1 style={{ color: 'var(--fourth-color)' }} className='about-title'>Cameron</h1>
-                <h1 style={{ color: 'var(--primary-color)' }} className='about-title'>&nbsp;&nbsp;Kroupa</h1>  
+                <h1 style={{ color: 'var(--primary-color)' }} className='about-title'>&nbsp;&nbsp;Kroupa</h1>
             </div>
             <div className='about-animation'>
                 <Typewriter textArray={["System.out.print('Welcome');",
@@ -35,7 +35,7 @@ export default function About() {
                 <br />
                 Learn more about me below!
 
-                {(state == 0) && <p style={{fontWeight: '900'}}>&nbsp;</p>}
+                {(state == 0) && <p style={{ fontWeight: '900' }}>&nbsp;</p>}
                 {(state == 1) && <p>647-612-4670</p>}
                 {(state == 2) && <p>ckroupa@uwo.ca</p>}
             </p>
@@ -43,10 +43,10 @@ export default function About() {
                 <a className="about-links-link" href="https://linkedin.com/in/cameron-kroupa-7404ba289"><FontAwesomeIcon onClick={() => handleClick(0)} icon={faLinkedin} /></a>
                 <a className="about-links-link" href="https://github.com/cmkroupa"><FontAwesomeIcon onClick={() => handleClick(0)} icon={faSquareGithub} /></a>
                 <a className="about-links-link"><FontAwesomeIcon onClick={() => handleClick(1)} icon={faSquarePhone} /></a>
-                <a className="about-links-link"><FontAwesomeIcon onClick={() => handleClick(2)}  icon={faSquareEnvelope} /></a>
+                <a className="about-links-link"><FontAwesomeIcon onClick={() => handleClick(2)} icon={faSquareEnvelope} /></a>
             </div>
-            
-            
+
+
         </div>
     )
 }

@@ -5,21 +5,24 @@ import Nav from "./../Nav/Nav.tsx"
 import About from "./../About/About.tsx"
 import Skills from "./../Skills/Skills.tsx"
 import Education from "./../Education/Education.tsx"
+import Projects from "./../Projects/Projects.tsx"
 
 export default function Home() {
     return (
         <div className="master-container">
             <Nav />
             <div className="not-nav">
-                <Spacer id="start"/>
+                <Spacer id="start" />
                 <About />
-                <Spacer/>
+                <Spacer />
                 <Skills />
-                <Spacer/>
+                <Spacer />
                 <Education />
-                <Spacer/>
+                <Spacer />
+                <Projects />
+                <Spacer />
             </div>
-            
+
         </div>
     );
 }

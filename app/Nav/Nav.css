@@ -27,5 +27,6 @@ a.nav-item:hover {
 a.nav-item:active {
     transform: scale(1) translateY(1px);
     cursor: pointer;
+    color: var(--highlight-color);
 
 }

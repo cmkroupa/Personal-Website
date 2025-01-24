@@ -1,13 +1,29 @@
 import "./Education.css"
 import Card from "./Card"
+
+import type { IconProp } from '@fortawesome/fontawesome-svg-core'; // Type-only import
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTerminal , faSquareBinary} from '@fortawesome/free-solid-svg-icons';
+import { faJava, faCuttlefish, faLinux, faPython } from '@fortawesome/free-brands-svg-icons';
+
 export default function Education() {
-    const CScourses =[[
+    const iconMapping: Record<string, IconProp> = {
+        "Java": faJava,         
+        "C": faCuttlefish,
+        "Unix": faLinux,
+        "Python": faPython,
+        "Terminal": faTerminal,
+        "Binary": faSquareBinary,
+        
+    };
+
+    const CScourses = [[
         {
             title: "Computer Science Fundamentals II",
             description: " Data organization and manipulation; abstract data types and their implementations in a modern programming language; lists, stacks, queues, trees; recursion; file handling and storage.",
             grade: 100,
             code: "CS 1027",
-            utilized: ["Java"]
+            utilized: ["Java"].map((name) => iconMapping[name]),
         },
 
         {
@@ -15,20 +31,21 @@ export default function Education() {
             description: "Understanding how programs execute (compilation, linking and loading); an introduction to a complex operating system (UNIX); scripting languages; the C programming language; system calls; memory management; libraries; multi-component program organization and builds; version control; debuggers and profilers.",
             grade: 98,
             code: "CS 2211",
-            utilized: ["C", "Unix"]
+            utilized: ["C", "Unix", "Terminal"].map((name) => iconMapping[name]),
         },
         {
             title: "Computer Science Fundamentals I",
             description: "he design and analysis of algorithms and their implementation as modular, reliable, well-documented programs written in a modern programming language.",
             grade: 97,
-            code: "CS 1026"
+            code: "CS 1026",
+            utilized: ["Python"].map((name) => iconMapping[name]),
         },
         {
             title: "Data Structures and Algorithms",
             description: "All sorts of Multiway search trees, graphs and their associated algorithms; file structures; sorting, searching such as Djikstra and Prim Jarnik Algorithms, and hashing techniques; time complexity.",
             grade: 95,
             code: "CS 2210",
-            utilized: ["Java"]
+            utilized: ["Java"].map((name) => iconMapping[name]),
         },
                         
     ],
@@ -43,7 +60,7 @@ export default function Education() {
             title: "Computer Organization and Architecture ",
             description: "The internal representation of various data types and focuses on the architectural components of computers (how these components are interconnected and the nature of the information flow between them). Assembly language is used to reinforce these issues.",
             code: "CS 2208",
-            utilized: ["Assembly"]
+            utilized: ["Binary"].map((name) => iconMapping[name]),
         },
         ]];
     

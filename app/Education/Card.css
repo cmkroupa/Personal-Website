@@ -1,16 +1,25 @@
-.card-course-selected{
-     color: var(--primary-color);
+.card-container{
+    height:650px;
 }
 
-.card-course{
-     
+.card-course {
+    text-decoration: underline;
+    transition: transform 0.3s ease, font-size 0.3s ease;
 }
 
-.card-course:hover{
-     color: var(--primary-color);
-     cursor: pointer;
+.card-course:hover {
+    cursor: pointer;
+    transform: scaleX(1.05);
+    /* Slight scale on the X-axis */
+    font-size: 1.05rem;
+    /* Slightly increase font size */
 }
+.card-course:active{
+    transform: scaleX(1);
+        font-size: 1.0rem;
+}
+
+
 .card-course-selected:hover{
-     color: var(--fourth-color);
      cursor: pointer;
 }
