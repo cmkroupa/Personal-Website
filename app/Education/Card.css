@@ -1,5 +1,5 @@
 .card-container{
-    height:650px;
+    height:700px;
 }
 
 .card-course {
@@ -9,9 +9,10 @@
 
 .card-course:hover {
     cursor: pointer;
-    transform: scaleX(1.05);
+    transform: scaleX(1.03);
     /* Slight scale on the X-axis */
     font-size: 1.05rem;
+    text-decoration: none;
     /* Slightly increase font size */
 }
 .card-course:active{

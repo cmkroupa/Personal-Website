@@ -12,7 +12,7 @@
     margin: 0px;
     padding: 0px;
 }
-.about-title{
+.title{
     font-size: 75px;
     display: flex;
         flex-direction: row;

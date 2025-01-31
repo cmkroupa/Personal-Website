@@ -19,8 +19,8 @@ export default function About() {
     return (
         <div id="about-container" className="about-container">
             <div className='about-title-div'>
-                <h1 style={{ color: 'var(--fourth-color)' }} className='about-title'>Cameron</h1>
-                <h1 style={{ color: 'var(--primary-color)' }} className='about-title'>&nbsp;&nbsp;Kroupa</h1>
+                <h1 style={{ color: 'var(--fourth-color)' }} className='title'>Cameron</h1>
+                <h1 style={{ color: 'var(--primary-color)' }} className='title'>&nbsp;&nbsp;Kroupa</h1>
             </div>
             <div className='about-animation'>
                 <Typewriter textArray={["System.out.print('Welcome');",

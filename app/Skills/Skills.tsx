@@ -19,7 +19,7 @@ export default function Skills() {
     return (
         <div id="skills" className="skills-container">
             <div className="skills-title">
-                <h1 style={{ color: 'var(--fourth-color)' }} className='about-title'>Skills</h1>
+                <h1 style={{ color: 'var(--fourth-color)' }} className='title'>Skills</h1>
             </div>
             <div className="skills-all">
                 <div className="skills-skill">
@@ -42,6 +42,9 @@ export default function Skills() {
                         [
                             { name: "GitHub", info: "I first taught myself python in grade 11 for fun. I have utilized python for data visualization as well as its typical usage for just programming. Further will be using it in my Machine Learning class" },
                             { name: "Docker", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
+                            { name: "GitLab", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
+                            { name: "JUnit", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
+                            { name: "UML", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
                         ]
                     } />
                 </div>

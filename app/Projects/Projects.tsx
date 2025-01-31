@@ -1,13 +1,13 @@
 
 import "./Projects.css"
-
+import Project from "./Project.tsx"
 export default function Projects() {
     return (
         <div id="projects-container">
             <div className="projects-title">
-                <h1>Projects</h1>
+                <h1 className="title">Projects</h1>
             </div>
-            <div>
+            <div className="">
                 <div className="projects-nav">
 
                 </div>

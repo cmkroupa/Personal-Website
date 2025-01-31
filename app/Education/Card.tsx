@@ -11,6 +11,7 @@ type Course = {
     code: string;
     description: string;
     grade?: number; // Optional grade property
+    avg?: number; // Optional grade property
     utilized?: IconProp[]; // Array of FontAwesome icon props
 };
 
@@ -49,7 +50,7 @@ export default function Card({ title, university, courses, inprogress }: CardPro
                                 <div onClick={() => setIsOpen("")} key={index} className="card-course-selected">
                                     <p>{course.title} - {course.grade}%</p>
                                     <ul>
-                                        <li><p>Code: {course.code}</p></li>
+                                        <li><p>Code: {course.code} | Class Average: {course.avg}</p></li>
                                         <li><p>Description: {course.description}</p></li>
                                         <li>
                                             {course.utilized !== undefined && (

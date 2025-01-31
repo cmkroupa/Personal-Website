@@ -1,8 +1,7 @@
 .skills-container {
     display: flex;
     flex-direction: column;
-    margin-left: 40px;
-
+    margin-left: 50px;
 }
 .skills-all{
     display: flex;
