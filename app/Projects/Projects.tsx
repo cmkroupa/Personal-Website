@@ -8,7 +8,7 @@ export default function Projects() {
     
     
     return (
-        <div id="projects-container">
+        <div id="projects" className="projects-container">
             <div className="projects-title">
                 <h1 className="title">Projects</h1>
             </div>
