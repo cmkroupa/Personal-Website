@@ -15,9 +15,9 @@ type Project = {
 export default function Project_Card({ title, description, utilized }: Project) {
     return (
         <div className="project-container">
-            <h1>{title}</h1>
-            <p>{description}</p>
-            <div>
+            <h1 className="project-card-title">{title}</h1>
+            <p className="project-card-description">{description}</p>
+            <div className="project-card-utilized">
                 {utilized !== undefined && (
                                                                 <>
                                                                     {utilized.map((icon, i) => (

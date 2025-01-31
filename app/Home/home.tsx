@@ -19,8 +19,7 @@ export default function Home() {
                 <Spacer />
                 <Education />
                 <Spacer />
-                <Projects />
-                <Spacer />
+                <Projects/>
             </div>
 
         </div>

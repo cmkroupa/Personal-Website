@@ -1,0 +1,17 @@
+.project-card{
+     background-color: black;
+}
+.project-card-title {
+          font-size: 1.5rem;
+          font-weight: bold;
+          margin-bottom: 0.5rem;
+}
+     
+.project-card-description {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+}
+     
+.project-card-utilized {
+     font-size: 1rem;
+}
