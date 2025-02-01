@@ -7,6 +7,7 @@ import Skills from "./../Skills/Skills.tsx"
 import Education from "./../Education/Education.tsx"
 import Projects from "./../Projects/Projects.tsx"
 import Experience from "./../Experience/Experience.tsx"
+import Footer from "./../Footer/Footer.tsx"
 
 export default function Home() {
     return (
@@ -24,6 +25,7 @@ export default function Home() {
                 <Spacer />
                 <Experience />
                 <Spacer />
+                <Footer/>
             </div>
 
         </div>

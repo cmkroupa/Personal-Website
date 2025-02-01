@@ -1,12 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload } from '@fortawesome/free-solid-svg-icons' // Import the specific icon
+import { faFileArrowDown } from '@fortawesome/free-solid-svg-icons' // Import the specific icon
 import { useEffect } from "react";
 import "./Nav.css"
 
 export default function Nav() {
     return (
         <nav>
-            <img />
             <div>
                 <ul>
                     <li>
@@ -33,7 +32,7 @@ export default function Nav() {
                     <hr />
                     <br />
                     <li>
-                        <a href="./Resume.pdf" download className='nav-item'><FontAwesomeIcon icon={faDownload} /> Resume</a>
+                        <a href="/Resume.pdf" download className='nav-item'><FontAwesomeIcon icon={faFileArrowDown} /> Resume</a>
                     </li>
                 </ul>
             </div>
