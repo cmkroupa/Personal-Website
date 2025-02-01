@@ -24,52 +24,46 @@ export default function Skills() {
             <div className="skills-all">
                 <div className="skills-skill">
                     <h2 className="skills-skill-title">Programming Languages</h2>
-                    <SkillWheel skills={
-                        [
-                            { name: "Python", info: "I first taught myself python in grade 11 for fun. I have utilized python for data visualization as well as its typical usage for just programming. Further will be using it in my Machine Learning class" },
-                            { name: "Java", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
-                            { name: "C", info: "I learned C in my second year Unix & C class. I enjoy the memory management in C as well as the usefulness of pointers" },
-                            { name: "Assembly", info: "Current Learning in my 2208 class" },
-                            { name: "JavaScript", info: "I first taught myself python in grade 11 for fun. I have utilized python for data visualization as well as its typical usage for just programming. Further will be using it in my Machine Learning class" },
-                            { name: "TypeScript", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
-                            { name: "React", info: "I learned C in my second year Unix & C class. I enjoy the memory management in C as well as the usefulness of pointers" },
-                        ]
-                    } />
+                    <SkillWheel skills={[
+                        { name: "Python", info: "I first taught myself Python in grade 11 for fun. I've used it for data visualization, scripting, and will further utilize it in my Machine Learning class." },
+                        { name: "Java", info: "I first learned Java in high school and have since become highly comfortable with it. It's my favorite language to program in." },
+                        { name: "C", info: "I learned C in my second-year Unix & C class. I enjoy working with memory management and pointers." },
+                        { name: "Assembly", info: "Currently learning Assembly in my Computer Architecture course. I find it fascinating to work at such a low level." },
+                        { name: "JavaScript", info: "I picked up JavaScript while learning web development. I've used it extensively in front-end and back-end projects." },
+                        { name: "TypeScript", info: "I started using TypeScript to add type safety to my JavaScript projects. It has improved my development workflow significantly." },
+                        { name: "React", info: "I use React to build modern, interactive web applications. I enjoy working with its component-based architecture." }
+                    ]} />
                 </div>
+
                 <div className="skills-skill">
                     <h2 className="skills-skill-title">DevOps & CI/CD</h2>
-                    <SkillWheel skills={
-                        [
-                            { name: "GitHub", info: "I first taught myself python in grade 11 for fun. I have utilized python for data visualization as well as its typical usage for just programming. Further will be using it in my Machine Learning class" },
-                            { name: "Docker", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
-                            { name: "GitLab", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
-                            { name: "JUnit", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
-                            { name: "UML", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
-                        ]
-                    } />
+                    <SkillWheel skills={[
+                        { name: "GitHub", info: "I use GitHub for version control, collaboration, and managing repositories for both personal and team projects." },
+                        { name: "Docker", info: "I have experience containerizing applications with Docker to ensure consistency across environments." },
+                        { name: "GitLab", info: "I have worked with GitLab's CI/CD pipelines to automate testing and deployment." },
+                        { name: "JUnit", info: "I use JUnit for unit testing in Java projects to ensure code reliability." },
+                        { name: "UML", info: "I use UML diagrams to design and document software architectures effectively." }
+                    ]} />
                 </div>
+
                 <div className="skills-skill">
                     <h2 className="skills-skill-title">Databases</h2>
-                    <SkillWheel skills={
-                        [
-                            { name: "SQL", info: "I first taught myself python in grade 11 for fun. I have utilized python for data visualization as well as its typical usage for just programming. Further will be using it in my Machine Learning class" },
-                            { name: "MongoDB", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
-                        ]
-                    } />
-                    
+                    <SkillWheel skills={[
+                        { name: "SQL", info: "I have experience writing SQL queries and designing relational databases." },
+                        { name: "MongoDB", info: "I use MongoDB for NoSQL database management in projects that require flexible, schema-less data storage." }
+                    ]} />
                 </div>
+
                 <div className="skills-skill">
                     <h2 className="skills-skill-title">Operating Systems</h2>
-                    <SkillWheel skills={
-                        [
-                            { name: "Linux", info: "I first taught myself python in grade 11 for fun. I have utilized python for data visualization as well as its typical usage for just programming. Further will be using it in my Machine Learning class" },
-                            { name: "Windows", info: "First learned in my highschool class. Java is by far my most comfrotablke language and I enjoy programming in it the most" },
-                            { name: "MacOS", info: "I learned C in my second year Unix & C class. I enjoy the memory management in C as well as the usefulness of pointers" }
-                            
-                        ]
-                    } />
+                    <SkillWheel skills={[
+                        { name: "Linux", info: "I frequently use Linux for development and have experience with bash scripting and system administration." },
+                        { name: "Windows", info: "I am proficient in Windows and often use it for software development and general computing." },
+                        { name: "MacOS", info: "I have experience working with MacOS, particularly for development and software testing." }
+                    ]} />
                 </div>
             </div>
+
             
             
 
