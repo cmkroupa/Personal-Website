@@ -1,5 +1,5 @@
 .card-container{
-    height:700px;
+    height:auto;
 }
 
 .card-course {
@@ -22,5 +22,8 @@
 
 
 .card-course-selected:hover{
-     cursor: pointer;
+    cursor: pointer;
+}
+.card-icon{
+    font-size: 30px;
 }

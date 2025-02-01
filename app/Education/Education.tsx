@@ -50,6 +50,13 @@ export default function Education() {
             avg:76,
             code: "CS 2210",
             utilized: ["Java"].map((name) => iconMapping[name]),
+        }, {
+            title: "Digital Humanities",
+            description: "We used the Nominatim geocoder from the Geopy library to retrieve geographic data and perform spatial analysis. Nominatim allows for converting addresses to coordinates and vice versa, helping us map locations and analyze geographic patterns. This tool enhanced our ability to work with geospatial data and integrate location-based information into Python applications..",
+            grade: 86,
+            avg: 76,
+            code: "DH1011",
+            utilized: ["Python"].map((name) => iconMapping[name]),
         },
                         
     ],

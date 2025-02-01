@@ -52,7 +52,7 @@ export default function Card({ title, university, courses, inprogress }: CardPro
                                     <ul>
                                         <li><p>Code: {course.code} | Class Average: {course.avg}</p></li>
                                         <li><p>Description: {course.description}</p></li>
-                                        <li>
+                                        <li className='card-icon'>
                                             {course.utilized !== undefined && (
                                                 <>
                                                     {course.utilized.map((icon, i) => (
