@@ -50,7 +50,7 @@ export default function Card({ title, university, courses, inprogress }: CardPro
                                 <div onClick={() => setIsOpen("")} key={index} className="card-course-selected">
                                     <p>{course.title} - {course.grade}%</p>
                                     <ul>
-                                        <li><p>Code: {course.code} | Class Average: {course.avg}</p></li>
+                                        <li><p>Code: {course.code} | Class Average: {course.avg}%</p></li>
                                         <li><p>Description: {course.description}</p></li>
                                         <li className='card-icon'>
                                             {course.utilized !== undefined && (
