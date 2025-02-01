@@ -30,7 +30,7 @@ export default function Skills() {
                         { name: "C", info: "I learned C in my second-year Unix & C class. I enjoy working with memory management and pointers." },
                         { name: "Assembly", info: "Currently learning Assembly in my Computer Architecture course. I find it fascinating to work at such a low level." },
                         { name: "JavaScript", info: "I picked up JavaScript while learning web development. I've used it extensively in front-end and back-end projects." },
-                        { name: "TypeScript", info: "I started using TypeScript to add type safety to my JavaScript projects. It has improved my development workflow significantly." },
+                        { name: "TypeScript", info: "I started using TypeScript to add type safety to my JavaScript projects." },
                         { name: "React", info: "I use React to build modern, interactive web applications. I enjoy working with its component-based architecture." }
                     ]} />
                 </div>
@@ -57,9 +57,9 @@ export default function Skills() {
                 <div className="skills-skill">
                     <h2 className="skills-skill-title">Operating Systems</h2>
                     <SkillWheel skills={[
-                        { name: "Linux", info: "I frequently use Linux for development and have experience with bash scripting and system administration." },
-                        { name: "Windows", info: "I am proficient in Windows and often use it for software development and general computing." },
-                        { name: "MacOS", info: "I have experience working with MacOS, particularly for development and software testing." }
+                        { name: "Linux", info: "An open-source operating system widely used for development, servers, and system administration." },
+                        { name: "Windows", info: "A popular operating system known for its user-friendly interface and widespread software compatibility." },
+                        { name: "MacOS", info: "Apple's operating system designed for Mac computers, known for its smooth user experience and developer tools." }
                     ]} />
                 </div>
             </div>
