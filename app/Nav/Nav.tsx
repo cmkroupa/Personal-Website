@@ -29,9 +29,6 @@ export default function Nav() {
                         <a href="#experience" className='nav-item'>Experience</a>
 
                     </li>
-                    <li>
-                        <a href="#contact" className='nav-item'>Contact</a>
-                    </li>
                     <br />
                     <hr />
                     <br />

@@ -29,7 +29,6 @@ export default function About() {
                     "print('Meet me.')",              // Python
                     "console.log('Hey there!');",      // JavaScript
                     "cout << 'Hello, world!';",        // C++
-                    "fmt.Println('Greetings!')",       // Go
                 ]} />
 
             </div>

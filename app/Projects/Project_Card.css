@@ -1,18 +1,10 @@
 .project-container{
     margin-bottom: 10px;
     padding: 10px;
-    box-shadow: 1px 1px black;
 }
 
-.project-card-title {
-          font-weight: bold;
 
-}
-     
-.project-card-description {
 
-}
-     
 .project-card-utilized {
      font-size: 2rem;
 }

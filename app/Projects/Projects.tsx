@@ -1,24 +1,18 @@
-import "./Projects.css"
-import Project from "./Project.tsx"
+import "./Projects.css";
+import Project from "./Project.tsx";
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTerminal, faTh } from '@fortawesome/free-solid-svg-icons';
+import { faTerminal, faTh, faEye } from '@fortawesome/free-solid-svg-icons';
 import { faReact, faJava, faLinux, faCuttlefish, faPython, faEthereum, faGithub, faHtml5, faJs, faCss3 } from '@fortawesome/free-brands-svg-icons';
-import type { IconProp } from '@fortawesome/fontawesome-svg-core';
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 export default function Projects() {
-    // Track the active icons
-    const [activeIcons, setActiveIcons] = useState<IconProp[]>([faTh]);
+    // Track the active icon as IconDefinition type
+    const [activeIcon, setActiveIcon] = useState<IconDefinition>(faEye);
 
-    const handleIconClick = (icon: IconProp) => {
-        // Toggle the icon's active state
-        setActiveIcons(prevState => {
-            if (prevState.includes(icon)) {
-                return prevState.filter(i => i !== icon);  // Remove icon if it's already active
-            } else {
-                return [...prevState, icon];  // Add icon if it's not already active
-            }
-        });
+    const handleIconClick = (icon: IconDefinition) => {
+        // Set the clicked icon as active
+        setActiveIcon(icon);
     };
 
     const Projects = [
@@ -90,8 +84,8 @@ export default function Projects() {
 
     const filterProjects = () => {
         return Projects.filter(project => {
-            if (activeIcons.includes(faTh)) return true;  // Show all projects if "All" is active
-            return project.utilized.some(icon => activeIcons.includes(icon));  // Filter based on active icons
+            if (activeIcon === faEye) return true;  // Show all projects if "All" is active
+            return project.utilized.includes(activeIcon);  // Filter based on active icon
         });
     };
 
@@ -102,62 +96,42 @@ export default function Projects() {
             </div>
             <span className="project-nav">
                 <a
-                    onClick={() => handleIconClick(faTh)}
-                    className={`project-nav-item ${activeIcons.includes(faTh) ? 'active' : 'inactive'}`}
+                    onClick={() => handleIconClick(faEye)}
+                    className={`project-nav-item ${activeIcon === faEye ? 'active' : 'inactive'}`}
                     title={"All"}
                 >
-                    <FontAwesomeIcon icon={faTh} />
+                    <FontAwesomeIcon icon={faEye} />
+                </a>
+                <a
+                    onClick={() => handleIconClick(faPython)}
+                    className={`project-nav-item ${activeIcon === faPython ? 'active' : 'inactive'}`}
+                    title={"Python"}
+                >
+                    <FontAwesomeIcon icon={faPython} />
                 </a>
                 <a
                     onClick={() => handleIconClick(faJava)}
-                    className={`project-nav-item ${activeIcons.includes(faJava) ? 'active' : 'inactive'}`}
+                    className={`project-nav-item ${activeIcon === faJava ? 'active' : 'inactive'}`}
                     title={"Java"}
                 >
                     <FontAwesomeIcon icon={faJava} />
                 </a>
                 <a
                     onClick={() => handleIconClick(faCuttlefish)}
-                    className={`project-nav-item ${activeIcons.includes(faCuttlefish) ? 'active' : 'inactive'}`}
+                    className={`project-nav-item ${activeIcon === faCuttlefish ? 'active' : 'inactive'}`}
                     title={"C"}
                 >
                     <FontAwesomeIcon icon={faCuttlefish} />
                 </a>
                 <a
-                    onClick={() => handleIconClick(faPython)}
-                    className={`project-nav-item ${activeIcons.includes(faPython) ? 'active' : 'inactive'}`}
-                    title={"Python"}
-                >
-                    <FontAwesomeIcon icon={faPython} />
-                </a>
-                <a
                     onClick={() => handleIconClick(faReact)}
-                    className={`project-nav-item ${activeIcons.includes(faReact) ? 'active' : 'inactive'}`}
+                    className={`project-nav-item ${activeIcon === faReact ? 'active' : 'inactive'}`}
                     title={"React"}
                 >
                     <FontAwesomeIcon icon={faReact} />
                 </a>
-                <a
-                    onClick={() => handleIconClick(faHtml5)}
-                    className={`project-nav-item ${activeIcons.includes(faHtml5) ? 'active' : 'inactive'}`}
-                    title={"HTML"}
-                >
-                    <FontAwesomeIcon icon={faHtml5} />
-                </a>
-                <a
-                    onClick={() => handleIconClick(faJs)}
-                    className={`project-nav-item ${activeIcons.includes(faJs) ? 'active' : 'inactive'}`}
-                    title={"Javascript"}
-                >
-                    <FontAwesomeIcon icon={faJs} />
-                </a>
-                <a
-                    onClick={() => handleIconClick(faCss3)}
-                    className={`project-nav-item ${activeIcons.includes(faCss3) ? 'active' : 'inactive'}`}
-                    title={"CSS"}
-                >
-                    <FontAwesomeIcon icon={faCss3} />
-                </a>
             </span>
+
             <div className="projects-card">
                 {filterProjects().map((project, index) => (
                     <Project

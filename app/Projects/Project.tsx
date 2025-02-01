@@ -19,7 +19,12 @@ export default function Project_Card({ title, description, utilized, date, githu
 
     return (
         <div className="project-container">
-            <h1 className="project-card-title">{title} - {date}</h1>
+            <div className="project-card-title">
+                <h1 className="project-card-title-title">{title}</h1>
+                <h2 className="project-card-date">{date}</h2>
+            </div>
+            
+            
             <h3>{who}</h3>
             <p className="project-card-description">{description}</p>
             <div className="project-card-utilized">
@@ -77,6 +82,7 @@ export default function Project_Card({ title, description, utilized, date, githu
                     </>
                 )}
             </div>
+            <hr/>
         </div>
     );
 }

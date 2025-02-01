@@ -6,6 +6,7 @@ import About from "./../About/About.tsx"
 import Skills from "./../Skills/Skills.tsx"
 import Education from "./../Education/Education.tsx"
 import Projects from "./../Projects/Projects.tsx"
+import Experience from "./../Experience/Experience.tsx"
 
 export default function Home() {
     return (
@@ -19,7 +20,10 @@ export default function Home() {
                 <Spacer />
                 <Education />
                 <Spacer />
-                <Projects/>
+                <Projects />
+                <Spacer />
+                <Experience />
+                <Spacer />
             </div>
 
         </div>
