@@ -36,7 +36,7 @@ export default function Projects() {
             title: "GoFundUs",
             github: "https://github.com/AlexanderKubarakos/CodenameGoFundUs",
             who: "Project, Western University Hackathon",
-            description: "Hackwestern 2024 Prize Winner! <br>GoFundUs is an innovative mutual fund service built on Starknet’s blockchain, designed to enhance transparency, security, and trust in fund management. The platform allows users to create and join funds, but what sets it apart is its unique governance model—fund owners can only withdraw money with majority approval from their members. This decentralized approach ensures collective decision-making, reducing the risk of mismanagement and fraud.",
+            description: "Hackwestern 2024 Prize Winner! GoFundUs is an innovative mutual fund service built on Starknet’s blockchain, designed to enhance transparency, security, and trust in fund management. The platform allows users to create and join funds, but what sets it apart is its unique governance model—fund owners can only withdraw money with majority approval from their members. This decentralized approach ensures collective decision-making, reducing the risk of mismanagement and fraud.",
             utilized: [faGithub, faEthereum, faHtml5, faJs, faCss3],
             date: "Dec 2024"
         },
