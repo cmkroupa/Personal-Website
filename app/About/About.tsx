@@ -1,19 +1,51 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin, faSquareGithub } from '@fortawesome/free-brands-svg-icons'
 import { faSquarePhone, faSquareEnvelope } from '@fortawesome/free-solid-svg-icons'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Typewriter from "~/Typewriter"
 import "./About.css"
+
 export default function About() {
     const [state, setState] = useState(0);
+    const [age, setAge] = useState("");
+
+    // Function to calculate age in years, months, days, hours, minutes, and seconds
+    const calculateAge = (birthDate: string) => {
+        const birth = new Date(birthDate);
+        const today = new Date();
+
+        const diff = today.getTime() - birth.getTime(); // Difference in milliseconds
+
+        // Convert to total seconds
+        const totalSeconds = Math.floor(diff / 1000);
+        
+        // Calculate the years, months, days, hours, minutes, and seconds
+        const years = Math.floor(totalSeconds / (60 * 60 * 24 * 365.25));
+        const months = Math.floor((totalSeconds % (60 * 60 * 24 * 365.25)) / (60 * 60 * 24 * 30.44)); // Average month length
+        const days = Math.floor((totalSeconds % (60 * 60 * 24 * 30.44)) / (60 * 60 * 24));
+        const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
+        const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+        const seconds = totalSeconds % 60;
+
+        return `${years} years, ${months} months, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds old`;
+    };
+
+    // Update the age on mount and at regular intervals (every second)
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setAge(calculateAge("2006-02-04"));
+        }, 1000); // Update every 1000 milliseconds (1 second)
+
+        // Clean up interval on component unmount
+        return () => clearInterval(interval);
+    }, []);
 
     const handleClick = (num: number) => {
-        if (num == state) {
+        if (num === state) {
             setState(0);
         } else {
             setState(num);
         }
-
     }
 
     return (
@@ -30,11 +62,10 @@ export default function About() {
                     "console.log('Hey there!');",      // JavaScript
                     "cout << 'Hello, world!';",        // C++
                 ]} />
-
             </div>
             <div className='about-intro'>
                 <p>
-                    Hello! I am a second-year university student pursuing an Honours Specialization in Computer Science with a Major in Mathematics.
+                    Hello! My name is Cameron, I am <strong>{age}</strong> and I am a second-year university student pursuing an Honours Specialization in Computer Science with a Major in Mathematics.
                     I have a deep passion for computer architecture, artificial intelligence, cybersecurity, and cryptography, and I am always eager to explore new concepts and expand my technical expertise.
 
                     Beyond academics, I enjoy building side projects, experimenting with emerging technologies, and tackling complex problems—some of which you can explore below.
@@ -45,9 +76,9 @@ export default function About() {
                     <br />
                     Learn more about me below!
                 </p>
-                {(state == 0) && <p style={{ fontWeight: '900' }}>&nbsp;</p>}
-                {(state == 1) && <p>647-612-4670</p>}
-                {(state == 2) && <p>ckroupa@uwo.ca</p>}
+                {(state === 0) && <p style={{ fontWeight: '900' }}>&nbsp;</p>}
+                {(state === 1) && <p>647-612-4670</p>}
+                {(state === 2) && <p>ckroupa@uwo.ca</p>}
             </div>
             <div className='about-links'>
                 <a className="about-links-link" href="https://linkedin.com/in/cameron-kroupa-7404ba289"><FontAwesomeIcon onClick={() => handleClick(0)} icon={faLinkedin} /></a>
@@ -55,8 +86,6 @@ export default function About() {
                 <a className="about-links-link"><FontAwesomeIcon onClick={() => handleClick(1)} icon={faSquarePhone} /></a>
                 <a className="about-links-link"><FontAwesomeIcon onClick={() => handleClick(2)} icon={faSquareEnvelope} /></a>
             </div>
-
-
         </div>
-    )
+    );
 }
