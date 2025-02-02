@@ -28,7 +28,7 @@ export default function Home() {
                 <Spacer />
                 <Footer/>
             </div>
-
+            <Analytics />
         </div>
     );
 }
