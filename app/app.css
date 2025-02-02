@@ -22,6 +22,9 @@
 
     
 }
+body{
+    scroll-behavior:smooth ;
+}
 
 
 
@@ -33,7 +36,6 @@ a{
     font-weight: 500;
     font-style: normal;
     text-decoration:  none;
-    scroll-behavior: smooth;
 }
 
 h1{
