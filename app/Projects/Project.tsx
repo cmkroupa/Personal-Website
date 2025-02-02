@@ -15,9 +15,11 @@ type Project = {
     properties?: IconProp[];
     vid: boolean;
     vid_src?: string;
+    img: boolean;
+    img_src?: string;
 };
 
-export default function Project_Card({ title, description, utilized, date, github ,who, vid, vid_src}: Project) {
+export default function Project_Card({ title, description, utilized, date, github ,who, vid, vid_src, img, img_src}: Project) {
 
     return (
         <div className="project-container">
@@ -28,20 +30,24 @@ export default function Project_Card({ title, description, utilized, date, githu
             
             
             <h3>{who}</h3>
-            <div>
+            <div className="project-card-display">
+                <p className="project-card-description project-card-display-item">{description}</p>
+                <div className="project-card-display-item">
                 {
-                    vid &&
+                    (vid &&
                     <iframe width="560" height="315"
                         src="https://www.youtube.com/embed/4ldX1Qp8-f0?start=29&controls=0&disablekb=1&modestbranding=1&rel=0"
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     >
-                    </iframe>
+                    </iframe>) || (img && <img className="project-img"src={img_src} />)
 
                 }
+                </div>
             </div>
+            
                 
-            <p className="project-card-description">{description}</p>
+            
             <div className="project-card-utilized">
                 {utilized !== undefined && (
                     <>

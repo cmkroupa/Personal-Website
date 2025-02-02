@@ -24,6 +24,7 @@ export default function Projects() {
             utilized: [faGithub, faReact, faHtml5, faJs, faCss3],
             date: "In Progress",
             vid: false,
+            img: false,
         },
         {
             title: "Personal Website",
@@ -33,6 +34,7 @@ export default function Projects() {
             utilized: [faGithub, faReact, faHtml5, faJs, faCss3],
             date: "March 2024",
             vid: false,
+            img: false,
         },
         {
             title: "GoFundUs",
@@ -43,6 +45,7 @@ export default function Projects() {
             utilized: [faGithub, faEthereum, faHtml5, faJs, faCss3],
             date: "Dec 2024",
             vid: true,
+            img: false,
         },
         {
             title: "Calendar App",
@@ -52,6 +55,8 @@ export default function Projects() {
             utilized: [faGithub, faCuttlefish, faLinux, faTerminal],
             date: "Nov 2024",
             vid: false,
+            img: true,
+            img_src: "/c_add.jpg",
         },
         {
             title: "Maze Graph Solver",
@@ -61,6 +66,8 @@ export default function Projects() {
             utilized: [faGithub, faJava],
             date: "Nov 2024",
             vid: false,
+            img: true,
+            img_src: "/maze.jpg",
         },
         {
             title: "West-Scrape",
@@ -70,6 +77,7 @@ export default function Projects() {
             utilized: [faGithub, faPython],
             date: "June 2024",
             vid: false,
+            img: false,
         },
         {
             title: "Frog Navigation Algorithm",
@@ -79,6 +87,7 @@ export default function Projects() {
             utilized: [faGithub, faJava],
             date: "March 2024",
             vid: false,
+            img: false,
         },
         {
             title: "Twitter Sentiment Analysis",
@@ -88,6 +97,7 @@ export default function Projects() {
             utilized: [faGithub, faPython],
             date: "November 2023",
             vid: false,
+            img: false,
         }
     ];
 
@@ -152,7 +162,9 @@ export default function Projects() {
                         utilized={project.utilized}
                         date={project.date}
                         vid={project.vid}
-                        vid_src={ project.vid_src}
+                        vid_src={project.vid_src}
+                        img={ project.img }
+                        img_src={ project.img_src }
                     />
                 ))}
             </div>

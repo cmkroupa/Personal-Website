@@ -2,7 +2,19 @@
     margin-bottom: 10px;
     padding: 10px;
 }
+.project-card-display{
+    display: flex;
+    flex-direction: row;
+}
 
+.project-img{
+    width:400px;
+    height:400px;
+}
+.project-card-display-item{
+    width:40%;
+    margin-right:15px;
+}
 
 
 .project-card-utilized {
