@@ -1,4 +1,5 @@
 import "./index.css"
+import { Analytics } from "@vercel/analytics/react"
 import Typewriter from '~/Typewriter'
 import Spacer from '~/Spacer'
 import Nav from "./../Nav/Nav.tsx"
