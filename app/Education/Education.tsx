@@ -52,7 +52,7 @@ export default function Education() {
             utilized: ["Java"].map((name) => iconMapping[name]),
         }, {
             title: "Digital Humanities",
-            description: "We used the Nominatim geocoder from the Geopy library to retrieve geographic data and perform spatial analysis. Nominatim allows for converting addresses to coordinates and vice versa, helping us map locations and analyze geographic patterns. This tool enhanced our ability to work with geospatial data and integrate location-based information into Python applications..",
+            description: "We used the Nominatim geocoder from Geopy for geographic data retrieval and spatial analysis. For text processing, SpaCy enabled efficient tokenization, named entity recognition, and syntactic parsing. SpaCy helped us extract insights from text for tasks like classification and sentiment analysis. Pandas was used for data manipulation, offering a flexible DataFrame structure for handling structured data effectively.",
             grade: 86,
             avg: 76,
             code: "DH1011",
