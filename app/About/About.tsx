@@ -14,18 +14,39 @@ export default function About() {
         const birth = new Date(birthDate);
         const today = new Date();
 
-        const diff = today.getTime() - birth.getTime(); // Difference in milliseconds
+        let years = today.getFullYear() - birth.getFullYear();
+        let months = today.getMonth() - birth.getMonth();
+        let days = today.getDate() - birth.getDate();
+        let hours = today.getHours() - birth.getHours();
+        let minutes = today.getMinutes() - birth.getMinutes();
+        let seconds = today.getSeconds() - birth.getSeconds();
 
-        // Convert to total seconds
-        const totalSeconds = Math.floor(diff / 1000);
-        
-        // Calculate the years, months, days, hours, minutes, and seconds
-        const years = Math.floor(totalSeconds / (60 * 60 * 24 * 365.25));
-        const months = Math.floor((totalSeconds % (60 * 60 * 24 * 365.25)) / (60 * 60 * 24 * 30.44)); // Average month length
-        const days = Math.floor((totalSeconds % (60 * 60 * 24 * 30.44)) / (60 * 60 * 24));
-        const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
-        const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
-        const seconds = totalSeconds % 60;
+        // Adjust months and years if needed
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+
+        // Adjust days and months if needed
+        if (days < 0) {
+            months--;
+            const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+            days += prevMonth.getDate();
+        }
+
+        // Adjust hours, minutes, and seconds if needed
+        if (hours < 0) {
+            days--;
+            hours += 24;
+        }
+        if (minutes < 0) {
+            hours--;
+            minutes += 60;
+        }
+        if (seconds < 0) {
+            minutes--;
+            seconds += 60;
+        }
 
         return `${years} years, ${months} months, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds old`;
     };
