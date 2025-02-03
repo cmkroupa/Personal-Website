@@ -50,7 +50,7 @@ export default function Projects() {
         {
             title: "Calendar App",
             github: "https://github.com/cmkroupa/C_Calendar",
-            who: "Educational Project, Western University",
+            who: "Educational Assignment, CS2211, Western University",
             description: "Developed a feature-rich calendar application in C, enabling users to seamlessly store, manage, and organize reminders. The calendar intelligently detects the current month and accurately aligns dates based on the starting day. Users can add multiple reminders per day, as well as edit or delete them as needed.",
             utilized: [faGithub, faCuttlefish, faLinux, faTerminal],
             date: "Nov 2024",
@@ -61,7 +61,7 @@ export default function Projects() {
         {
             title: "Maze Graph Solver",
             github: "https://github.com/cmkroupa/MazeGame",
-            who: "Educational Project, Western University",
+            who: "Educational Assignment, CS2210, Western University",
             description: "This maze solver utilizes a Depth-First Search (DFS) algorithm to explore and find the first path out of the maze, ensuring an efficient and systematic approach. The maze is composed of hallways where coins are placed, and these coins are required to progress through each hallway. The solver is designed to navigate the maze while keeping the total coin usage below a predefined limit.",
             utilized: [faGithub, faJava],
             date: "Nov 2024",
@@ -82,7 +82,7 @@ export default function Projects() {
         {
             title: "Frog Navigation Algorithm",
             github: "https://github.com/cmkroupa/Frog_Path",
-            who: "Educational Project, Western University",
+            who: "Educational Assignment, CS1027, Western University",
             description: "Utilizing a priority queue in combination with a map of the frog's current state, this algorithm efficiently explores all potential moves the frog can make in its environment.",
             utilized: [faGithub, faJava],
             date: "March 2024",
@@ -92,7 +92,7 @@ export default function Projects() {
         {
             title: "Twitter Sentiment Analysis",
             github: "https://github.com/cmkroupa/Twitter_Sentiment_Analysis",
-            who: "Educational Project, Western University",
+            who: "Educational Assignment, CS1026, Western University",
             description: "Using Python, this tool leverages a comprehensive database of Twitter tweets to perform in-depth word analysis and gain valuable insights from the data.",
             utilized: [faGithub, faPython],
             date: "November 2023",
