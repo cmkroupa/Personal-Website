@@ -1,5 +1,6 @@
 import "./index.css"
 import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Typewriter from '~/Typewriter'
 import Spacer from '~/Spacer'
 import Nav from "./../Nav/Nav.tsx"
@@ -29,6 +30,7 @@ export default function Home() {
                 <Footer/>
             </div>
             <Analytics />
+            <SpeedInsights/>
         </div>
     );
 }
