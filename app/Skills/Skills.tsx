@@ -25,13 +25,13 @@ export default function Skills() {
                 <div className="skills-skill">
                     <h2 className="skills-skill-title">Programming Languages</h2>
                     <SkillWheel skills={[
-                        { name: "Python", info: "I first taught myself Python in grade 11 for fun. I've used it for data visualization, scripting, and will further utilize it in my Machine Learning class." },
+                        { name: "Python", info: "I first taught myself Python in grade 12 for fun. I've used it for data visualization, web scraping, and will further utilize it in latter years in Machine Learning class." },
                         { name: "Java", info: "I first learned Java in high school and have since become highly comfortable with it. It's my favorite language to program in." },
-                        { name: "C", info: "I learned C in my second-year Unix & C class. I enjoy working with memory management and pointers." },
-                        { name: "Assembly", info: "Currently learning Assembly in my Computer Architecture course. I find it fascinating to work at such a low level." },
+                        { name: "C", info: "I learned C in my second-year Unix & C class (CS2211). I enjoy working with memory management and pointers." },
+                        { name: "Assembly", info: "Currently learning Assembly in my Computer Architecture course. I find it interesting to work at such a low level." },
                         { name: "JavaScript", info: "I picked up JavaScript while learning web development. I've used it extensively in front-end and back-end projects." },
                         { name: "TypeScript", info: "I started using TypeScript to add type safety to my JavaScript projects." },
-                        { name: "React", info: "I use React to build modern, interactive web applications. I enjoy working with its component-based architecture." }
+                        { name: "React", info: "I use React to build modern, interactive web applications. I find it easy to work with its component-based architecture." }
                     ]} />
                 </div>
 
@@ -39,10 +39,10 @@ export default function Skills() {
                     <h2 className="skills-skill-title">DevOps & CI/CD</h2>
                     <SkillWheel skills={[
                         { name: "GitHub", info: "I use GitHub for version control, collaboration, and managing repositories for both personal and team projects." },
-                        { name: "Docker", info: "I have experience containerizing applications with Docker to ensure consistency across environments." },
-                        { name: "GitLab", info: "I have worked with GitLab's CI/CD pipelines to automate testing and deployment." },
-                        { name: "JUnit", info: "I use JUnit for unit testing in Java projects to ensure code reliability." },
-                        { name: "UML", info: "I use UML diagrams to design and document software architectures effectively." }
+                        { name: "Docker", info: "I have experience containerizing applications with Docker during my Hackathon project to ensure consistency across environments." },
+                        { name: "GitLab", info: "I have worked with GitLab's documenting and managing repositroeis in my Software Engineering class(CS2212)." },
+                        { name: "JUnit", info: "I used JUnit for unit testing in my Software Engineering (CS2212) class to ensure code reliability." },
+                        { name: "UML", info: "I used UML diagrams to design and document software architectures effectively in my Software Engineering (CS2212) class." }
                     ]} />
                 </div>
 
