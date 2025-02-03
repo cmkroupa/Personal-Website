@@ -9,55 +9,60 @@ export default function About() {
     const [state, setState] = useState(0);
     const [age, setAge] = useState("");
 
-    // Function to calculate age in years, months, days, hours, minutes, and seconds
     const calculateAge = (birthDate: string) => {
         const birth = new Date(birthDate);
-        const today = new Date();
+        const now = new Date();
 
-        let years = today.getFullYear() - birth.getFullYear();
-        let months = today.getMonth() - birth.getMonth();
-        let days = today.getDate() - birth.getDate();
-        let hours = today.getHours() - birth.getHours();
-        let minutes = today.getMinutes() - birth.getMinutes();
-        let seconds = today.getSeconds() - birth.getSeconds();
+        let diff = now.getTime() - birth.getTime();
 
-        // Adjust months and years if needed
-        if (months < 0) {
-            years--;
-            months += 12;
+        if (diff < 0) {
+            return "Invalid birth date (in the future)";
         }
 
-        // Adjust days and months if needed
-        if (days < 0) {
-            months--;
-            const prevMonth = new Date(today.getFullYear(), today.getMonth(), 0);
-            days += prevMonth.getDate();
+        const years = now.getFullYear() - birth.getFullYear();
+        const months = now.getMonth() - birth.getMonth();
+        const days = now.getDate() - birth.getDate();
+        const hours = now.getHours() - birth.getHours();
+        const minutes = now.getMinutes() - birth.getMinutes();
+        const seconds = now.getSeconds() - birth.getSeconds();
+
+        let ageYears = years;
+        let ageMonths = months;
+        let ageDays = days;
+        let ageHours = hours;
+        let ageMinutes = minutes;
+        let ageSeconds = seconds;
+
+        if (ageSeconds < 0) {
+            ageSeconds += 60;
+            ageMinutes--;
+        }
+        if (ageMinutes < 0) {
+            ageMinutes += 60;
+            ageHours--;
+        }
+        if (ageHours < 0) {
+            ageHours += 24;
+            ageDays--;
+        }
+        if (ageDays < 0) {
+            const prevMonth = new Date(now.getFullYear(), now.getMonth(), 0);
+            ageDays += prevMonth.getDate();
+            ageMonths--;
+        }
+        if (ageMonths < 0) {
+            ageMonths += 12;
+            ageYears--;
         }
 
-        // Adjust hours, minutes, and seconds if needed
-        if (hours < 0) {
-            days--;
-            hours += 24;
-        }
-        if (minutes < 0) {
-            hours--;
-            minutes += 60;
-        }
-        if (seconds < 0) {
-            minutes--;
-            seconds += 60;
-        }
-
-        return `${years} years, ${months} months, ${days} days, ${hours} hours, ${minutes} minutes, ${seconds} seconds old`;
+        return `${ageYears} years, ${ageMonths} months, ${ageDays} days, ${ageHours} hours, ${ageMinutes} minutes, ${ageSeconds} seconds old`;
     };
 
-    // Update the age on mount and at regular intervals (every second)
     useEffect(() => {
         const interval = setInterval(() => {
             setAge(calculateAge("2006-02-04"));
-        }, 1000); // Update every 1000 milliseconds (1 second)
+        }, 1000);
 
-        // Clean up interval on component unmount
         return () => clearInterval(interval);
     }, []);
 
