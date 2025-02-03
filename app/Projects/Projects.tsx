@@ -30,7 +30,7 @@ export default function Projects() {
             title: "Personal Website",
             github: "https://github.com/cmkroupa/Personal-Website",
             who: "Personal Project",
-            description: "This website.",
+            description: "I built this personal website as a fun project to showcase my skills, projects, and experiences. The site serves as a dynamic resume, providing an overview of my background in computer science and math.",
             utilized: [faGithub, faReact, faHtml5, faJs, faCss3],
             date: "March 2024",
             vid: false,
