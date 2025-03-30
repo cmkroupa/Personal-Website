@@ -20,7 +20,7 @@ export default function Education() {
     const CScourses = [[
         {
             title: "Computer Science Fundamentals II",
-            description: " Data organization and manipulation; abstract data types and their implementations in a modern programming language; lists, stacks, queues, trees; recursion; file handling and storage.",
+            description: "Data organization and manipulation; abstract data types and their implementations in a modern programming language; lists, stacks, queues, trees; recursion; file handling and storage.",
             grade: 100,
             avg: 67,
             code: "CS 1027",
@@ -29,7 +29,7 @@ export default function Education() {
 
         {
             title: "Software Tools and Systems Programming ",
-            description: "Understanding how programs execute (compilation, linking and loading); an introduction to a complex operating system (UNIX); scripting languages; the C programming language; system calls; memory management; libraries; multi-component program organization and builds; version control; debuggers and profilers.",
+            description: "Understanding how programs execute (compilation, linking and loading); an introduction to Unix; scripting languages; the C programming language; system calls; memory management; libraries; multi-component program organization and builds; version control; debuggers and profilers.",
             grade: 98,
             avg: 86,
             code: "CS 2211",
@@ -37,7 +37,7 @@ export default function Education() {
         },
         {
             title: "Computer Science Fundamentals I",
-            description: "he design and analysis of algorithms and their implementation as modular, reliable, well-documented programs written in a modern programming language.",
+            description: "The design and analysis of algorithms and their implementation as modular, reliable, well-documented programs written in a modern programming language.",
             grade: 97,
             avg:80,
             code: "CS 1026",
@@ -103,7 +103,7 @@ export default function Education() {
     [
         {
             title: "Linear Algebra II",
-            description: "Abstract vector spaces and linear transformations over arbitrary fields; change of basis; inner product spaces; norms and distance; least squares and Fourier approximation; singular value decomposition. Applications to differential equations.",
+            description: "Abstract vector spaces and linear transformations over arbitrary fields; change of basis; inner product spaces; norms and distance; similarity; least squares and Fourier approximation; singular value decomposition. Applications to differential equations.",
             code: "Math 2700"
         }
     ]];

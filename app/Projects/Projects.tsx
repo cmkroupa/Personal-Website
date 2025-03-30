@@ -2,7 +2,7 @@ import "./Projects.css";
 import Project from "./Project.tsx";
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTerminal, faStar, faTh, faEye } from '@fortawesome/free-solid-svg-icons';
+import { faTerminal, faSquareBinary,faEye, faSquare } from '@fortawesome/free-solid-svg-icons';
 import { faReact, faJava, faLinux, faCuttlefish, faPython, faEthereum, faGithub, faHtml5, faJs, faCss3 } from '@fortawesome/free-brands-svg-icons';
 import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
@@ -17,12 +17,39 @@ export default function Projects() {
 
     const Projects = [
         {
+            title: "Virtual Pet Game",
+            github: "",
+            who: "Educational Assignment, Western University",
+            description: "Term long project. First it started with requirements gathering and building class and activity diagrams. As well as UI Mockups using wireframes. Then we implemented all work researched to create a final virtual pet game where you feed, exercise, and so on for your created virtual pet. GitHub link not available as project was completed on GitLab under university profile so its not public.",
+            utilized: [faGithub, faJava],
+            date: "March 2025",
+            vid: false,
+            img: false,
+        },{
+            title: "Null Terminated Strings - Assembly",
+            github: "",
+            who: "Educational Assignment, Western University",
+            description: "Given a null terminated string, and a key word. You have to transfer the string to a new memory location while removing all instances of the key in the string. Done in under 30 lines of Assembly code.",
+            utilized: [faSquareBinary],
+            date: "March 2025",
+            vid: false,
+            img: false,
+        },{
+            title: "ISBN Verification - Assembly",
+            github: "https://github.com/cmkroupa/ISBN-Verification",
+            who: "Educational Assignment, Western University",
+            description: "Given a string ISBN had to verify that it was a valid ISBN. Utilizing my knowledge from Linear Algebra we had a unit on code vectors, so I knew the code vector for the ISBN. You take the dot product between the code vector and given ISBN then mod 10 must be 0. If it is not it is an invalid ISBN. This was completed in under 17 lines in Asssembly.",
+            utilized: [faSquareBinary],
+            date: "March 2025",
+            vid: false,
+            img: false,
+        },{
             title: "LatticeTalk",
             github: "https://github.com/kalpipatel/LatticeTalk",
             who: "Club Project, Western Cyber Society",
             description: "Current encryption methods, such as RSA, are vulnerable to quantum attacks using Shor's Algorithm. To address this, we leveraged research in post-quantum encryption to develop a JavaScript application that implements lattice-based encryption, ensuring quantum security. This application provides a highly secure, peer-to-peer messaging system.",
             utilized: [faGithub, faReact, faHtml5, faJs, faCss3],
-            date: "In Progress",
+            date: "March 2025",
             vid: false,
             img: false,
         },
@@ -32,7 +59,7 @@ export default function Projects() {
             who: "Personal Project",
             description: "I built this personal website as a fun project to showcase my skills, projects, and experiences. The site serves as a dynamic resume, providing an overview of my background in computer science and math.",
             utilized: [faGithub, faReact, faHtml5, faJs, faCss3],
-            date: "March 2024",
+            date: "Feb 2025",
             vid: false,
             img: false,
         },

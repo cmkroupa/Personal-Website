@@ -50,7 +50,7 @@ export default function Skills() {
                     <h2 className="skills-skill-title">Databases</h2>
                     <SkillWheel skills={[
                         { name: "SQL", info: "I have experience writing SQL queries and designing relational databases." },
-                        { name: "MongoDB", info: "I use MongoDB for NoSQL database management in projects that require flexible, schema-less data storage." }
+                        { name: "MongoDB", info: "I used MongoDB for NoSQL database management in projects that require flexible, schema-less data storage." }
                     ]} />
                 </div>
 

@@ -92,13 +92,11 @@ export default function About() {
             <div className='about-intro'>
                 <p>
                     Hello! My name is Cameron, I am <strong>{age}</strong> and I am a second-year university student pursuing an Honours Specialization in Computer Science with a Major in Mathematics.
-                    I have a deep passion for computer architecture, artificial intelligence, cybersecurity, and cryptography, and I am always eager to explore new concepts and expand my technical expertise.
+                    I have a deep passion for computer architecture, artificial intelligence, and cybersecurity. I am always eager to explore new concepts and expand my technical expertise.
 
-                    Beyond academics, I enjoy building side projects, experimenting with emerging technologies, and tackling complex problems—some of which you can explore below.
-                    I also love playing chess, which sharpens my strategic thinking, and golf, which provides the perfect blend of patience and precision.
-
-                    When I’m not coding or studying, you might find me watching random youtube videos about how things are made, solving puzzles, or diving into an interesting book.
-                    I’m always curious about the mechanics behind everyday objects and enjoy learning about the world in unexpected ways.
+                    Beyond academics, I enjoy building side projects some of which you can explore below.
+                    I also love playing chess and watching random youtube videos about how things are made or diving into an interesting book.
+                    I’m always curious about the mechanics behind everyday objects.
                     <br />
                     Learn more about me below!
                 </p>
