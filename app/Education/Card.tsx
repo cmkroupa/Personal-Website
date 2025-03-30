@@ -51,7 +51,7 @@ export default function Card({ title, university, courses, inprogress }: CardPro
                                     <p>{course.title}</p>
                                     <ul>
                                         <li><p>Code: {course.code} | Class Average: {course.avg}%</p></li>
-                                        <li><p>My Grade: {course.grade}</p></li>
+                                        <li><p>My Grade: {course.grade}%</p></li>
                                         <li><p>Description: {course.description}</p></li>
                                         <li className='card-icon'>
                                             {course.utilized !== undefined && (
