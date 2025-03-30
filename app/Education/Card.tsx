@@ -48,9 +48,10 @@ export default function Card({ title, university, courses, inprogress }: CardPro
                         {courses.map((course, index) => (
                             isOpen === course.code ? (
                                 <div onClick={() => setIsOpen("")} key={index} className="card-course-selected">
-                                    <p>{course.title} - {course.grade}%</p>
+                                    <p>{course.title}</p>
                                     <ul>
                                         <li><p>Code: {course.code} | Class Average: {course.avg}%</p></li>
+                                        <li><p>My Grade: {course.grade}</p></li>
                                         <li><p>Description: {course.description}</p></li>
                                         <li className='card-icon'>
                                             {course.utilized !== undefined && (
@@ -68,7 +69,7 @@ export default function Card({ title, university, courses, inprogress }: CardPro
                                 </div>
                             ) : (
                                 <div onClick={() => setIsOpen(course.code)} key={index} className="card-course">
-                                    <p>{course.title} - {course.grade}%</p>
+                                    <p>{course.title}</p>
                                 </div>
                             )
                         ))}

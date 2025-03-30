@@ -179,7 +179,7 @@ export default function Projects() {
                 <a
                     onClick={() => handleIconClick(faSquareBinary)}
                     className={`project-nav-item ${activeIcon === faSquareBinary ? 'active' : 'inactive'}`}
-                    title={"React"}
+                    title={"Assembly"}
                 >
                     <FontAwesomeIcon icon={faSquareBinary} />
                 </a>
