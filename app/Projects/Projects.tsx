@@ -20,8 +20,8 @@ export default function Projects() {
             title: "Virtual Pet Game",
             github: "",
             who: "Educational Assignment, Western University",
-            description: "Term long project. First it started with requirements gathering and building class and activity diagrams. As well as UI Mockups using wireframes. Then we implemented all work researched to create a final virtual pet game where you feed, exercise, and so on for your created virtual pet. GitHub link not available as project was completed on GitLab under university profile so its not public.",
-            utilized: [faGithub, faJava],
+            description: "Term long project. First it started with requirements gathering and building class and activity diagrams. Also made UI Mockups using wireframes. Then we implemented all research to create a final virtual pet game where you feed, exercise, and so on for your created virtual pet.",
+            utilized: [faJava],
             date: "March 2025",
             vid: false,
             img: false,
@@ -38,8 +38,8 @@ export default function Projects() {
             title: "ISBN Verification - Assembly",
             github: "https://github.com/cmkroupa/ISBN-Verification",
             who: "Educational Assignment, Western University",
-            description: "Given a string ISBN had to verify that it was a valid ISBN. Utilizing my knowledge from Linear Algebra we had a unit on code vectors, so I knew the code vector for the ISBN. You take the dot product between the code vector and given ISBN then mod 10 must be 0. If it is not it is an invalid ISBN. This was completed in under 17 lines in Asssembly.",
-            utilized: [faSquareBinary],
+            description: "Given a string ISBN had to verify that it was a valid ISBN. Utilizing my knowledge from Linear Algebra take the dot product between the code vector and given ISBN then mod 10 must be 0. If it is not 0 it is an invalid ISBN. This was completed in under 17 lines in Asssembly.",
+            utilized: [faGithub, faSquareBinary],
             date: "March 2025",
             vid: false,
             img: false,
@@ -175,6 +175,13 @@ export default function Projects() {
                     title={"React"}
                 >
                     <FontAwesomeIcon icon={faReact} />
+                </a>
+                <a
+                    onClick={() => handleIconClick(faSquareBinary)}
+                    className={`project-nav-item ${activeIcon === faSquareBinary ? 'active' : 'inactive'}`}
+                    title={"React"}
+                >
+                    <FontAwesomeIcon icon={faSquareBinary} />
                 </a>
             </span>
 

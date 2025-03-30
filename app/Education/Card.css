@@ -9,15 +9,7 @@
 
 .card-course:hover {
     cursor: pointer;
-    transform: scaleX(1.03);
-    /* Slight scale on the X-axis */
-    font-size: 1.05rem;
     text-decoration: none;
-    /* Slightly increase font size */
-}
-.card-course:active{
-    transform: scaleX(1);
-        font-size: 1.0rem;
 }
 
 
